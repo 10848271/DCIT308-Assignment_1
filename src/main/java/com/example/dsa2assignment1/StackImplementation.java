@@ -3,7 +3,6 @@ package com.example.dsa2assignment1;
 import javafx.event.ActionEvent;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
-import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -82,6 +81,10 @@ class StackImplementation extends GridPane
          /* Making buttons create events */
          pushButton.setOnAction(this::stackOperation);
          popButton.setOnAction(this::stackOperation);
+
+         /* Changing the color of the buttons */
+         pushButton.setStyle("-fx-background-color: green");
+         popButton.setStyle("-fx-background-color: red");
      }
 
      /* Implementing the event handler for buttons */
